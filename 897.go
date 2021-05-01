@@ -7,6 +7,26 @@
 卡点：
 1.重新构建树，必直接在遍历是构建简单。
 2.新构建树时，要用到指针便宜，所以用了go。python不知道怎么用指针
+3.中序遍历不用判断左右，直接zhong(node.left);ls=append(ls,node.val);zhong(node.right)
+
+python遍历写法：
+    def zhong(self,root):
+        ls = []
+        if root is not None:
+            lls = self.zhong(root.left)
+            ls = ls + lls
+            ls.append(root.val)
+            rls=self.zhong(root.right)
+            ls = ls +rls
+
+        # if root.left is not None:
+        #     lls=self.zhong(root.left)
+        #     ls = ls + lls
+        # ls.append(root.val)
+        # if root.right is not None:
+        #     rls=self.zhong(root.right)
+        #     ls = ls +rls
+        return ls
 **/
 
 
