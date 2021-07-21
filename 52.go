@@ -14,8 +14,7 @@ intersectVal = 8, listA = [4,1,8,4,5], listB = [5,0,1,8,4,5], skipA = 2, skipB =
 
 【解题】先map，在循环第二个
 【卡点】难点，map的键值要存*ListNode 即指针地址，不能是val
-1. python遍历扫描层结果，不能用 for i in tmp，改成 for i in range(len(tmp))
-2. 主要扫描到值才添加到结果数组
+
 
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof
